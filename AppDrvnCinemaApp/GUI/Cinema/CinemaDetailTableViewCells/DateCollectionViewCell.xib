@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DateCollectionViewCell" id="uw0-mo-kzv" customClass="DateCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Tues)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zod-hJ-YFl">
+                        <rect key="frame" x="10" y="6" width="60" height="18"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.45882352939999999" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="gsw-iw-o7I"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12, Sept" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwr-AP-wPX">
+                        <rect key="frame" x="10" y="26" width="60" height="18"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.45882352939999999" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="wN4-tv-LNI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Zod-hJ-YFl" secondAttribute="trailing" constant="10" id="Aro-qg-NUG"/>
+                <constraint firstAttribute="trailing" secondItem="zwr-AP-wPX" secondAttribute="trailing" constant="10" id="BXv-yj-hjm"/>
+                <constraint firstItem="Zod-hJ-YFl" firstAttribute="top" secondItem="uw0-mo-kzv" secondAttribute="top" constant="6" id="IA4-Cu-eM3"/>
+                <constraint firstItem="zwr-AP-wPX" firstAttribute="top" secondItem="Zod-hJ-YFl" secondAttribute="bottom" constant="2" id="hL0-2b-bC0"/>
+                <constraint firstItem="zwr-AP-wPX" firstAttribute="leading" secondItem="uw0-mo-kzv" secondAttribute="leading" constant="10" id="ioJ-bB-Gz1"/>
+                <constraint firstAttribute="bottom" secondItem="zwr-AP-wPX" secondAttribute="bottom" constant="6" id="ip6-Xd-74Z"/>
+                <constraint firstItem="Zod-hJ-YFl" firstAttribute="leading" secondItem="uw0-mo-kzv" secondAttribute="leading" constant="10" id="xLA-Mh-dbe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="CRT-ZO-fap"/>
+            <size key="customSize" width="91" height="50"/>
+            <connections>
+                <outlet property="dateLabel" destination="zwr-AP-wPX" id="PTL-Q8-oDe"/>
+                <outlet property="dayLabel" destination="Zod-hJ-YFl" id="lxc-dx-bjB"/>
+            </connections>
+            <point key="canvasLocation" x="41" y="24"/>
+        </collectionViewCell>
+    </objects>
+</document>

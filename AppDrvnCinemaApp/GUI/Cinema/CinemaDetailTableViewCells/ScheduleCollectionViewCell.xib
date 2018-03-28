@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScheduleCollectionViewCell" id="QIZ-43-0tm" customClass="ScheduleCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="42"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09.30 AM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pq5-iX-L5u">
+                        <rect key="frame" x="10" y="3" width="60" height="36"/>
+                        <color key="backgroundColor" red="0.27934330559999998" green="0.25336346009999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9WW-Xh-7G7">
+                        <rect key="frame" x="79" y="0.0" width="1" height="42"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="ZyI-gc-itc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="9WW-Xh-7G7" firstAttribute="top" secondItem="QIZ-43-0tm" secondAttribute="top" id="JIM-BG-kAE"/>
+                <constraint firstAttribute="trailing" secondItem="9WW-Xh-7G7" secondAttribute="trailing" id="JLb-2M-miS"/>
+                <constraint firstAttribute="bottom" secondItem="9WW-Xh-7G7" secondAttribute="bottom" id="MPV-es-cfo"/>
+                <constraint firstAttribute="trailing" secondItem="pq5-iX-L5u" secondAttribute="trailing" constant="10" id="Oko-G6-icL"/>
+                <constraint firstAttribute="bottom" secondItem="pq5-iX-L5u" secondAttribute="bottom" constant="3" id="f3E-0u-AJ7"/>
+                <constraint firstItem="pq5-iX-L5u" firstAttribute="leading" secondItem="QIZ-43-0tm" secondAttribute="leading" constant="10" id="lVp-Zm-TTz"/>
+                <constraint firstItem="pq5-iX-L5u" firstAttribute="top" secondItem="QIZ-43-0tm" secondAttribute="top" constant="3" id="uCj-IF-2Af"/>
+            </constraints>
+            <connections>
+                <outlet property="separatorLine" destination="9WW-Xh-7G7" id="Hso-kw-GN3"/>
+                <outlet property="timeLabel" destination="pq5-iX-L5u" id="uhW-ev-oIS"/>
+            </connections>
+            <point key="canvasLocation" x="-275" y="-9"/>
+        </collectionViewCell>
+    </objects>
+</document>
